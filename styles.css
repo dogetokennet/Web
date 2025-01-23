@@ -9,9 +9,12 @@ body {
     font-family: 'Comic Sans MS', cursive, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: var(--background-color);
+    background: linear-gradient(135deg, var(--secondary-color), var(--background-color));
     color: var(--text-color);
     line-height: 1.6;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 header {
@@ -63,18 +66,19 @@ header {
 .hero h2 {
     font-size: 2.5rem;
     color: var(--primary-color);
-    margin-bottom: 0.2rem;
+    margin-bottom: 1rem;
 }
 
 .hero h3 {
     font-size: 2rem;
     color: var(--primary-color);
-    margin-bottom: 0.5rem;
+    margin-bottom: 2.5rem;
 }
 
 .hero p {
     font-size: 1.2rem;
     color: var(--text-color);
+    margin-top: 1rem;
 }
 
 .slogan {
@@ -107,6 +111,7 @@ footer {
     background-color: var(--secondary-color);
     padding: 1rem;
     text-align: center;
+    margin-top: auto;
 }
 
 .social-links {
@@ -149,6 +154,14 @@ footer {
 }
 
 @media (max-width: 768px) {
+    body {
+        background: var(--secondary-color);
+    }
+
+    .hero {
+        background: var(--secondary-color);
+    }
+
     .hero h2 {
         font-size: 2rem;
     }
