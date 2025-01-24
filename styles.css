@@ -12,7 +12,7 @@ body {
     background: linear-gradient(135deg, var(--secondary-color), var(--background-color));
     color: var(--text-color);
     line-height: 1.6;
-    min-height: 100vh;
+    min-height: calc(100vh - 50px);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -119,6 +119,10 @@ footer {
     padding: 1rem;
     text-align: center;
     width: 100%;
+    position: sticky;
+    bottom: 0;
+    min-height: 50px;
+    z-index: 100;
 }
 
 .social-links {
